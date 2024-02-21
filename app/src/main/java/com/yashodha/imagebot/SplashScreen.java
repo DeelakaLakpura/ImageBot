@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
+import com.yashodha.imagebot.User.LoginActivity;
+import com.yashodha.imagebot.User.RegisterActivity;
+
 public class SplashScreen extends AppCompatActivity {
-    private static final int SPLASH_SCREEN_TIME_OUT = 5000;
+    private static final int SPLASH_SCREEN_TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,7 @@ public class SplashScreen extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent i = new Intent(SplashScreen.this, HomeActivity.class);
+                    Intent i = new Intent(SplashScreen.this, LoginActivity.class);
                     startActivity(i);
                     finish();
                 }

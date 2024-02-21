@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".User.ResetPassActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="336dp"
+        android:layout_height="432dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fpTextView"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="Forgot Password?"
+                android:fontFamily="@font/pacifico"
+                android:textSize="30sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/fpInstructionsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/p_b"
+                android:paddingRight="5dp"
+                android:text="Enter your email address and we will send you a link to reset your password."
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fpResetEditText"
+                android:layout_width="288dp"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
+                android:ems="10"
+                android:background="@drawable/input_txt"
+
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/fpResetButton"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:background="?attr/colorPrimaryDark"
+                android:text="Reset Password"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/fpReturnToLoginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="52dp"
+                android:text="Return to Login"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

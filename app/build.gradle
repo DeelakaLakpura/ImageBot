@@ -47,7 +47,8 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.github.Shashank02051997:FancyAlertDialog-Android:0.3'
-
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-auth:22.3.1'
 
 
 }

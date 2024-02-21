@@ -21,6 +21,18 @@
         android:theme="@style/Theme.ImageBot"
         tools:targetApi="31">
         <activity
+            android:name=".User.ResetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".FoodViewActivity"
             android:exported="false" />
         <activity
@@ -43,7 +55,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
